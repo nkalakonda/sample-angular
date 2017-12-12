@@ -1,0 +1,16 @@
+<ul class="person-list">
+	<li>
+	<div *ngIf="person" class="person-row"> 
+		<span class="person-title">
+			{{person.firstName}}
+			{{person.lastName}}
+		</span>
+		
+		<span class="edit-actions">
+			<a (click)="deletePerson(person.id)">
+	               <i class="material-icons delete">Delete</i>
+	         </a>
+        </span>
+       </div>
+      </li>
+</ul>
